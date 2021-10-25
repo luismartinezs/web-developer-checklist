@@ -88,6 +88,7 @@ This is (and possibly forever will be) a work in progress
 <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
 ```
 - Any registered event listeners are removed when the page is unloaded / destroyed
+- Consider using a frontend caching mechanism, e.g. [Data Fetching using Vue Hooks | Darren Jennings](https://guuu.io/2020/data-fetching-vue-composition-api/)
 
 ## PWA:
 
