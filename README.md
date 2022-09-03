@@ -6,21 +6,22 @@ This is (and possibly forever will be) a work in progress
 - Meaningful choice of:
   - Frontend code (javascript, typescript...)
   - Frontend framework (Vue, React...)
-  - Backend code (node.js, java, php...)
+  - Backend code (node.js, java, php, Solidity, ...)
   - Backend framework (express.js, springboot, laravel, Nuxt...)
   - Testing suites
-  - Application type: SSR, CSR, SPA, static site...
+  - Application type: SSG, SSR, SPA...
   - Software architecture
   - Database schema (if any)
   - Deployment strategy (e.g. push code to master branch, release to staging and production from weekly release branches)
   - Code base hosting service (gitlab, github...)
-  - Hosting / server provider (AWS, Heroku, DigitalOcean, Netlify, Zeit...)
+  - Hosting / server provider (AWS, Heroku, DigitalOcean, Netlify, Vercel...)
   - Domain vendor
   - Useful:
     - [State of JS 2019](https://2019.stateofjs.com/)
     - [State of CSS 2019](https://2019.stateofcss.com/)
 
 ## Programming workflow
+
 - Write new code
   - While doing so, write any comments that help understand why the code was written that way
 - Write the tests that validate the use cases involved in the new code, in a per commit basis
@@ -38,8 +39,8 @@ This is (and possibly forever will be) a work in progress
    - What sections per page
    - What content per section
 2. Create "design-less" layout / wireframe, based on standard web elements, do mobile first, then desktop
-3. Create html file without styles
-4. Apply basic styles to html to create wireframe
+3. Create html / jsx without styles
+4. Apply basic styles to create wireframe
 5. Create design (branding, styles, theme) >> style guide
 6. Apply theme and styles to complete design
 7. Release to production
@@ -120,7 +121,9 @@ This is (and possibly forever will be) a work in progress
 - Do not use `eval()`
 - Do not use `document.write()`
 - Always put any secrets in `.env` files and have git ignore them
-- Secure http headers: helmet package
+- Secure http headers
+  - helmet package
+  - Run yor site here: [https://securityheaders.com/](https://securityheaders.com/)
 - Principle of least privilege
 - Always have backups of any data or code
 - Encrypt sensitive data in any transaction: [bcrypt](https://github.com/kelektiv/node.bcrypt.js#readme)
